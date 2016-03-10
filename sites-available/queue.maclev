@@ -1,0 +1,8 @@
+server {
+  listen 80;
+	server_name queue.maclev.*;
+
+	location / {
+		proxy_pass http://queue-ui:3000;
+	}
+}
