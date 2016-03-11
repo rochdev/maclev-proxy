@@ -4,5 +4,8 @@ server {
 
 	location / {
 		proxy_pass http://queue-ui:3000;
+		limit_except GET {
+			deny all;
+		}
 	}
 }
