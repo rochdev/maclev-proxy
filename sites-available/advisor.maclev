@@ -1,8 +1,0 @@
-server {
-  listen 80;
-	server_name advisor.maclev.*;
-
-	location / {
-		proxy_pass http://advisor:8080;
-	}
-}
